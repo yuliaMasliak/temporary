@@ -1,0 +1,326 @@
+* {
+  font-family: "Unbounded", cursive;
+}
+body {
+  background-color: rgb(16, 3, 33);
+  padding: 30px;
+  margin: 0px auto;
+  max-width: 1480px;
+}
+.logo img {
+  position: relative;
+  float: right;
+  width: 600px;
+}
+.btn-title-garage,
+.btn-title-winners {
+  width: 170px;
+  height: 40px;
+  margin-right: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(116, 112, 121, 0.204);
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-title-garage:hover,
+.btn-title-winners:hover {
+  color: white;
+  background-color: rgba(103, 80, 124, 0.629);
+}
+.garage-page {
+  position: absolute;
+  margin-top: 40px;
+}
+.user-block {
+  padding-left: 60px;
+}
+.input-car-update,
+.input-car-create {
+  margin-top: 15px;
+  height: 45px;
+  width: 300px;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-size: 18px;
+  color: rgb(209, 209, 209);
+  padding-left: 10px;
+  text-transform: capitalize;
+  border: none;
+  background-color: rgba(247, 239, 239, 0.306);
+}
+.input-car-color-create,
+.input-car-color-update {
+  position: relative;
+  left: -65px;
+  top: 10px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btn-create-car,
+.btn-update-car {
+  position: relative;
+  top: 1px;
+  height: 48px;
+  width: 165px;
+  border-radius: 8px;
+  left: -45px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(9, 9, 121) 11.2%,
+    rgb(144, 6, 161) 53.7%,
+    rgb(0, 212, 255) 100.2%
+  );
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.btn-create-car:hover,
+.btn-update-car:hover,
+.btn-generte-car:hover {
+  background: linear-gradient(
+    109.6deg,
+    rgb(9, 9, 121, 0.306) 11.2%,
+    rgb(144, 6, 161, 0.306) 53.7%,
+    rgb(0, 212, 255, 0.306) 100.2%
+  );
+}
+.btn-generte-car,
+.btn-race-car,
+.btn-reset-car {
+  height: 45px;
+  width: 155px;
+  border-radius: 8px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(9, 9, 121) 11.2%,
+    rgb(144, 6, 161) 53.7%,
+    rgb(0, 212, 255) 100.2%
+  );
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.btn-race-car {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.btn-reset-car {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+.svg-car-icon {
+  fill: currentColor;
+  position: relative;
+  top: 15px;
+}
+.racing-block {
+  margin-top: 35px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.racing-car-block {
+  margin-top: 20px;
+}
+.racing-track img {
+  max-width: 98%;
+}
+.car-model {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.flex-car-flag {
+  display: flex;
+  justify-content: space-between;
+}
+.racing-flag img {
+  position: relative;
+  width: 70px;
+  top: 5px;
+  padding-right: 120px;
+}
+.update-buttons {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(56, 56, 103);
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: rgb(251, 251, 251);
+}
+.play-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.stop:hover,
+.play:hover {
+  cursor: pointer;
+  filter: opacity(50%);
+}
+#prev-button,
+#next-button,
+#page-button,
+#winners-prev-button,
+#winners-next-button,
+#winners-page-button {
+  width: fit-content;
+  min-width: 40px;
+  height: 30px;
+  background-color: rgb(56, 38, 71);
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.select-button:hover,
+.delete-button:hover {
+  background-color: rgb(20, 97, 97);
+}
+.hidden {
+  visibility: hidden;
+}
+
+.winners-page {
+  color: white;
+  margin-top: 100px;
+}
+.count {
+  color: white;
+  margin-top: 15px;
+}
+nav {
+  display: flex;
+}
+.disabled {
+  cursor: not-allowed;
+  filter: opacity(50%);
+}
+.winner {
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  background-color: transparent;
+  color: rgb(254, 250, 250);
+  font-size: 28px;
+  border-radius: 8px;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px;
+  z-index: 2;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  30% {
+    opacity: 0;
+  }
+}
+.no-winner {
+  position: absolute;
+  visibility: hidden;
+}
+.winners-list,
+.winners-list-to-add {
+  display: flex;
+  margin-top: 30px;
+  border: 1px dashed white;
+  max-width: 550px;
+  padding-left: 0px;
+}
+.winners-list-to-add {
+  margin-top: 0px;
+  max-height: 45px;
+}
+.winners-list,
+.winners-list-to-add,
+.winner-brand,
+.winner-wins,
+.winner-time {
+  border-left: 1px dashed white;
+  padding: 10px;
+}
+
+.winner-brand {
+  width: 300px;
+  padding-top: 0px;
+}
+.winner-wins,
+.winner-time {
+  width: 50px;
+  text-align: center;
+}
+.winner-number,
+.winner-number-main {
+  width: 40px;
+  text-align: center;
+}
+.svg-car-icon-winner {
+  fill: currentColor;
+  border: none;
+}
+.arrow-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.arrow-btn:hover {
+  transform: scale(1.5);
+  background: transparent;
+  color: rgb(222, 194, 225);
+  border: none;
+  cursor: pointer;
+}
+
+.car-status {
+  height: 0px;
+  color: rgb(99, 56, 95);
+  position: absolute;
+  left: 40%;
+}
+@media screen and (max-width: 1140px) {
+  .logo img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .logo img {
+    display: none;
+  }
+}
+@media screen and (max-width: 565px) {
+  .input-car-update,
+  .input-car-create {
+    width: 200px;
+  }
+  .btn-generte-car,
+  .btn-race-car,
+  .btn-reset-car {
+    width: 122.5px;
+  }
+}
